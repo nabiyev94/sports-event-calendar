@@ -1,4 +1,3 @@
-# app/models.py
 from __future__ import annotations
 from sqlalchemy.orm import declarative_base, Mapped, mapped_column, relationship
 from sqlalchemy import Integer, String, Text, DateTime, ForeignKey, UniqueConstraint
