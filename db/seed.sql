@@ -5,7 +5,7 @@ BEGIN;
 -- Sports
 INSERT INTO sport (name) VALUES ('Football'), ('Ice Hockey');
 
--- Teams (unique per sport)
+-- Teams (unique per spor	t)
 INSERT INTO team (sport_id, name)
 VALUES
   ((SELECT id FROM sport WHERE name = 'Football'),  'Salzburg'),
