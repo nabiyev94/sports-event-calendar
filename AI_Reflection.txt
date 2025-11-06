@@ -1,0 +1,72 @@
+AI Reflection — Sportradar Coding Academy 2026 Project
+-------------------------------------------------------
+
+This reflection explains how I used AI tools (ChatGPT) during the creation of my
+Sports Event Calendar project and which parts were written by me.
+
+ 
+
+1. Parts written and implemented by me
+--------------------------------------
+- I designed the database schema and ER diagram (sport, team, venue, event).
+- I installed and configured PostgreSQL locally, created schema.sql and seed.sql,
+  and verified them in pgAdmin.
+- I built and ran the FastAPI application and fixed connection errors.
+- I structured the repository and created commits.
+- I prepared the README and AI_Reflection documentation.
+
+ 
+
+2. Parts generated or influenced by AI
+--------------------------------------
+- I used ChatGPT to:
+  - Write DBML syntax for dbdiagram.io to generatw ER.
+  - Suggest an initial FastAPI project structure (db.py, models.py, schemas.py, crud.py, main.py).
+  - Generate code structure for endpoints and service separation .
+  - Explain SQLAlchemy relationships and environment variable usage.
+
+After receiving AI suggestions, I:
+  - Reviewed every generated file line by line.
+  - Tested all endpoints manually.
+  - Fixed any mismatches in naming or logic (e.g., event–team relationships, local DB URL).
+  - Modified AI-generated text to fit my style, naming conventions, and PostgreSQL setup.
+
+ 
+
+3. Evaluation of AI output
+--------------------------
+- I corrected several issues, such as database connection strings,
+  event relationship naming, and field normalization.
+ 
+
+4. Technical Decisions
+----------------------
+- Chose **FastAPI** because it demonstrates clean, asynchronous backend design
+  and strong typing with Pydantic models.
+- Used **SQLAlchemy ORM** to ensure object-oriented handling of database logic.
+- Chose **PostgreSQL** for data consistency and relational enforcement.
+
+ 
+
+5. Possible Improvements
+-------------------------
+If I had more time, I would:
+- Add a frontend form with real-time validation and an edit/delete feature.
+- Add user authentication and role management.
+- Deploy the app on Docker for portability.
+- Include continuous integration tests (e.g., GitHub Actions).
+
+ 
+
+6. Reflection Summary
+----------------------
+AI helped me structure and speed up implementation, but every piece of logic,
+database design, and testing step was fully verified and customized by me.
+AI served as a mentor and assistant, not a code generator to copy blindly.
+This process deepened my understanding of database modeling, FastAPI,
+and backend development principles.
+
+---
+
+Written by: Ramazan Nabiyev
+Date: November 2025
